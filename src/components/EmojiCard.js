@@ -1,11 +1,14 @@
 import { useState } from "react";
 
 const EmojiCard = (props) => {
-  const { name, code } = props;
-  //console.log(props)
+    const { name, code } = props;
+    
+  console.log(props)
   return (
     <li >
-      {name} {code}
+          <p>{name}</p>
+          <p dangerouslySetInnerHTML={{ __html: code }}></p>
+          <p>HTML: {code}</p>
     </li>
   );
 };
