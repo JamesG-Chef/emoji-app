@@ -2,7 +2,7 @@
 import './App.css';
 import Header from "./components/Header"
 import Emojilist from './components/EmojList';
-import EmojiCard from './components/EmojiCard';
+
 
 function App() {
   return (

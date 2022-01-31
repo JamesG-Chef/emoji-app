@@ -1,15 +1,16 @@
 import { useState } from "react";
 import EmojiCard from "./EmojiCard";
+import Search from "./Search.js"
 
 const Emojilist = () => {
+
+  const [searchTerm, setSearchTerm] = useState('')
+  
+  console.log(searchTerm);
+
+  //FETCH using the search value
+
   const [emojiList, setEmojiList] = useState([
-    {
-      name: "slightly smiling face",
-      category: "smileys and people",
-      group: "face positive",
-      htmlCode: ["&#128578;"],
-      unicode: ["U+1F642"],
-    },
   ]);
 
   return (
@@ -25,6 +26,8 @@ const Emojilist = () => {
           );
         })}
       </ul>
+      <Search setSearchTerm={setSearchTerm}></Search>
+
     </>
   );
 };

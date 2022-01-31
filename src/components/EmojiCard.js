@@ -3,7 +3,7 @@ import { useState } from "react";
 const EmojiCard = (props) => {
     const { name, code } = props;
     
-  console.log(props)
+  
   return (
     <li >
           <p>{name}</p>
