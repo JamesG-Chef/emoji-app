@@ -3,11 +3,12 @@ import { useState } from "react";
 const Search = (props) => {
   const { setSearchTerm } = props;
 
-  const [catSelection, setCatSelection] = useState("");
+  const [catSelection, setCatSelection] = useState("default");
 
   function handleSubmit(event) {
     event.preventDefault();
-    setSearchTerm(catSelection)
+    setSearchTerm(catSelection);
+    setCatSelection("default")
   }
 
   function handleChange(event) {
@@ -17,8 +18,8 @@ const Search = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>select category</label>
-      <select name="category" onChange={handleChange}>
-        <option value="default">choose category</option>
+      <select name="category" onChange={handleChange} value={catSelection}>
+        <option value="default">choose category</option> {/*make unselectable*/}
         <option value="smileys_and_people">smileys and people</option>
         <option value="animals_and_nature">animals and nature</option>
         <option value="food_and_drink">food and drink</option>

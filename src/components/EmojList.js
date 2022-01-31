@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EmojiCard from "./EmojiCard";
 import Search from "./Search.js"
 
 const Emojilist = () => {
 
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState(null)
   
-  console.log(searchTerm);
+  //welcome page renders when emojiList.length is 0
+ 
+  useEffect(()=>{
+    if(searchTerm){
+    fetch(`https://emojihub.herokuapp.com/api/all/category_${searchTerm}`)
+    .then((res)=> res.json())
+    .then((emojis)=> setEmojiList(emojis))
+  }}, [searchTerm])
 
-  //FETCH using the search value
+
 
   const [emojiList, setEmojiList] = useState([
   ]);
@@ -21,7 +28,7 @@ const Emojilist = () => {
             <EmojiCard
               key={emoji.name}
               name={emoji.name}
-              code={emoji.htmlCode[0]}
+              code={emoji.htmlCode[emoji.htmlCode.length - 1]}
             />
           );
         })}
