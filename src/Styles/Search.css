@@ -1,24 +1,30 @@
 .search-container {
-  
-  padding: 2vh;
   background-color: #ebebf5;
-  border: none 20px aqua;
-  
+  padding: 2vh;
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
   border-radius: 50px;
-  box-shadow: 1px 2px 2px 0px #00000026;
-  margin: 10px
+  box-shadow: 0px 5px 10px 0px #0000005e;
 }
 .button {
     font-family: acme;
     border-radius: 50px;
-    font-size: 4vw;
     margin-left: 3vw;
     padding: 1vw 2vw; 
 }
 .select {
     border-radius: 30px;
-    font-size: 4vw;
     font-family: acme;
     margin-right: 3vw;
-    padding: 1vw 2vw; 
+    padding: 1vw 1.5vw; 
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 2vw;
+}
+.select {
+  font-size: 2vw;
+}
 }

@@ -2,9 +2,9 @@ import "../Styles/Header.css";
 
 const Header = () => {
   return (
-    
-      <h1 className="page-header">Emoji Searcher</h1>
-    
+    <div className="header-container">
+      <h1 className="page-header">&#127880; Emoji Searcher &#10024;</h1>
+    </div>
   );
 };
 
