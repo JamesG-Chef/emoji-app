@@ -7,7 +7,7 @@ import Emojilist from './components/EmojList';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header className="borders"/>
       <Emojilist />
 
     </div>

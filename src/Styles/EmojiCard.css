@@ -1,0 +1,12 @@
+.emoji-list-item {
+    list-style: none;
+    margin: 0;
+    font-size: 20px;;
+}
+p.emoji {
+    font-size: 70px;
+    margin: 0;
+}
+p {
+    margin: 20px;
+}

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import EmojiCard from "./EmojiCard";
 import Search from "./Search.js"
+import Welcomepage from "./Welcome-page";
+import "../Styles/EmojiList.css"
 
 const Emojilist = () => {
 
@@ -15,25 +17,25 @@ const Emojilist = () => {
     .then((emojis)=> setEmojiList(emojis))
   }}, [searchTerm])
 
-
-
   const [emojiList, setEmojiList] = useState([
   ]);
 
   return (
     <>
-      <ul>
+      <Welcomepage emojiList={emojiList} />
+      <Search setSearchTerm={setSearchTerm}></Search><ul className="emojilist">
+        
         {emojiList.map((emoji) => {
           return (
             <EmojiCard
               key={emoji.name}
               name={emoji.name}
-              code={emoji.htmlCode[emoji.htmlCode.length - 1]}
+              code={emoji.htmlCode[0]}
             />
           );
         })}
       </ul>
-      <Search setSearchTerm={setSearchTerm}></Search>
+      
 
     </>
   );
