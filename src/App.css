@@ -21,10 +21,8 @@
   color: #61dafb;
 }
 
-.borders {
-  padding: 5vh;
-  background-color: #ebebf5;
-  border: solid 20px aqua;
-  margin: 0;
-}
 
+
+.test-class {
+  background-color: red;
+}

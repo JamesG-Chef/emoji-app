@@ -2,14 +2,13 @@ h1 {
     padding: 5vh;
     font-size: 10vw;
     background-color: #ebebf5;
-    border: solid 20px aqua;
-    margin: 0;
+    
+    margin: 10px;
     border-radius: 50px;
+    box-shadow: 1px 2px 2px 0px #00000026;
 }
 
-div {
-   
-}
+
 
 
 

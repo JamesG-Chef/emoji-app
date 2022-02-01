@@ -1,10 +1,11 @@
 .welcome-page {
   padding: 2vh;
-  background-color: #ebebf5;
+  background-color: aqua;
   border: solid aqua;
   border-width: 0px 20px;
   margin: 0;
   border-radius: 50px;
+  font-size: 4vw;
 }
 .poo {
   font-size: 5em;

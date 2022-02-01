@@ -1,14 +1,24 @@
 .search-container {
+  
   padding: 2vh;
   background-color: #ebebf5;
-  border: solid 20px aqua;
-  margin: 0;
-  border-radius: 50px;
+  border: none 20px aqua;
   
+  border-radius: 50px;
+  box-shadow: 1px 2px 2px 0px #00000026;
+  margin: 10px
 }
 .button {
+    font-family: acme;
     border-radius: 50px;
+    font-size: 4vw;
+    margin-left: 3vw;
+    padding: 1vw 2vw; 
 }
 .select {
     border-radius: 30px;
+    font-size: 4vw;
+    font-family: acme;
+    margin-right: 3vw;
+    padding: 1vw 2vw; 
 }

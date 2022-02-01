@@ -1,4 +1,11 @@
 ul.emojilist {
-    margin: 0;
-    padding: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    padding: 10px;
+    background-color: aqua;
+    
 }
+
